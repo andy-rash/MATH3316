@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A13881651F72D64E0073CEF6 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A138815E1F72D64E0073CEF6 /* Vector.cpp */; };
 		A13881661F72D64E0073CEF6 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A13881631F72D64E0073CEF6 /* Matrix.cpp */; };
-		A13881671F72D64E0073CEF6 /* MatrixTest.old.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A13881641F72D64E0073CEF6 /* MatrixTest.old.cpp */; };
 		A19CD0A51F72D452004A8578 /* proj1_a.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19CD0A41F72D452004A8578 /* proj1_a.cpp */; };
 		A19CD0B01F72D576004A8578 /* nest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19CD0AE1F72D576004A8578 /* nest.cpp */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		A13881611F72D64E0073CEF6 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
 		A13881621F72D64E0073CEF6 /* Serializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
 		A13881631F72D64E0073CEF6 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
-		A13881641F72D64E0073CEF6 /* MatrixTest.old.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixTest.old.cpp; sourceTree = "<group>"; };
 		A19CD0A11F72D452004A8578 /* MATH3316-Project1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MATH3316-Project1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19CD0A41F72D452004A8578 /* proj1_a.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = proj1_a.cpp; sourceTree = "<group>"; };
 		A19CD0AE1F72D576004A8578 /* nest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nest.cpp; sourceTree = "<group>"; };
@@ -52,12 +50,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13881681F73275A0073CEF6 /* res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 		A19CD0981F72D452004A8578 = {
 			isa = PBXGroup;
 			children = (
 				A19CD0AB1F72D513004A8578 /* bin */,
 				A19CD0AC1F72D522004A8578 /* lib */,
 				A19CD0AD1F72D530004A8578 /* src */,
+				A13881681F73275A0073CEF6 /* res */,
 				A19CD0A21F72D452004A8578 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +88,6 @@
 			children = (
 				A13881631F72D64E0073CEF6 /* Matrix.cpp */,
 				A13881601F72D64E0073CEF6 /* Matrix.h */,
-				A13881641F72D64E0073CEF6 /* MatrixTest.old.cpp */,
 				A138815D1F72D64E0073CEF6 /* NotImplementedException.h */,
 				A13881621F72D64E0073CEF6 /* Serializable.h */,
 				A13881611F72D64E0073CEF6 /* Types.h */,
@@ -160,10 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13881661F72D64E0073CEF6 /* Matrix.cpp in Sources */,
-				A19CD0A51F72D452004A8578 /* proj1_a.cpp in Sources */,
-				A19CD0B01F72D576004A8578 /* nest.cpp in Sources */,
 				A13881651F72D64E0073CEF6 /* Vector.cpp in Sources */,
-				A13881671F72D64E0073CEF6 /* MatrixTest.old.cpp in Sources */,
+				A19CD0B01F72D576004A8578 /* nest.cpp in Sources */,
+				A19CD0A51F72D452004A8578 /* proj1_a.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
