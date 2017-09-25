@@ -55,16 +55,16 @@ int main(int argc, const char * argv[]) {
     // Generate increments for
     // h = 2^(-n), n = (1, 2, 3, ... , 52)
     auto n = PH::Vector::linSpace(1, 52, 52);
-    PH::Vector h_values = 2 ^ -n;
+    PH::Vector h = 2 ^ -n;
     
     auto a = 2.0;
     PH::Vector approximations(52), r_e(52), r_u(52);
     
     for(Index i = 0; i <= 52; i++) {
         
-        r_e[i] = relative_error(a, h_values[i]);
+        r_e[i] = relative_error(a, h[i]);
         
-        r_u[i] = relative_error_upper_bound(a, h_values[i]);
+        r_u[i] = relative_error_upper_bound(a, h[i]);
         
     }
     
@@ -77,7 +77,7 @@ int main(int argc, const char * argv[]) {
     n.saveTo("res/part2/n.txt");
     
     // output array h = 2^(-n), n = (1, 2, 3, ... , 52)
-    h_values.saveTo("res/part2/h.txt");
+    h.saveTo("res/part2/h.txt");
     
     // output array r (relative error of approximation)
     r_e.saveTo("res/part2/r_e.txt");
