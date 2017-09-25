@@ -34,29 +34,7 @@ int main(int argc, const char * argv[]) {
     
     Approximator * appr = new Approximator();
     
-    /*
-     * Taken from Stack Overflow
-     * Easiest way to fill std::vector<double> with equidistant values
-     * - https://stackoverflow.com/questions/39162938/easiest-way-to-fill-stdvectordouble-with-equidistant-values
-     */
-    struct double_iota {
-        
-        double_iota(double inc, double init_value = 0.0) : _value(init_value), _inc(inc) {}
-        
-        operator double() const { return _value; }
-        double_iota& operator++() { _value += _inc; return *this; }
-        double _value;
-        double _inc;
-        
-    };
-    
-    // create row vector -1 <= x <= 1
-    double min = -1.0;
-    double max = 1.01;
-    double step = 0.01;
-    std::vector<double> z_vec(std::size_t(((max + step - std::numeric_limits<double>::epsilon()) - min) / step));
-    std::iota(z_vec.begin(), z_vec.end(), double_iota(step, min));
-    PH::Vector z(z_vec);
+    PH::Vector z = z.linSpace(-1.0, 1.0, 201);
     
     PH::Vector p4_coef = exp_taylor_coef(4);
     PH::Vector p8_coef = exp_taylor_coef(8);
