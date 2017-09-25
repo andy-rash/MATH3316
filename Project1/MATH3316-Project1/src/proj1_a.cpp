@@ -69,13 +69,13 @@ int main(int argc, const char * argv[]) {
     PH::Vector err8(err8_vec);
     PH::Vector err12(err12_vec);
     
-    appr->output(p4, "res/p4.txt");
-    appr->output(p8, "res/p8.txt");
-    appr->output(p12, "res/p12.txt");
-    appr->output(f, "res/f.txt");
-    appr->output(err4, "res/err4.txt");
-    appr->output(err8, "res/err8.txt");
-    appr->output(err12, "res/err12.txt");
+    appr->output(p4, "res/part1/p4.txt");
+    appr->output(p8, "res/part1/p8.txt");
+    appr->output(p12, "res/part1/p12.txt");
+    appr->output(f, "res/part1/f.txt");
+    appr->output(err4, "res/part1/err4.txt");
+    appr->output(err8, "res/part1/err8.txt");
+    appr->output(err12, "res/part1/err12.txt");
     
     return 0;
 
