@@ -69,6 +69,7 @@ int main(int argc, const char * argv[]) {
     PH::Vector err8(err8_vec);
     PH::Vector err12(err12_vec);
     
+    appr->output(z, "res/part1/z.txt");
     appr->output(p4, "res/part1/p4.txt");
     appr->output(p8, "res/part1/p8.txt");
     appr->output(p12, "res/part1/p12.txt");
