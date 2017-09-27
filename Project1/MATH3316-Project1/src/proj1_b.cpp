@@ -57,7 +57,7 @@ int main(int argc, const char * argv[]) {
     auto n = PH::Vector::linSpace(1, 52, 52);
     PH::Vector h = 2 ^ -n;
     
-    auto a = 2.0;
+    auto a = 3.0;
     PH::Vector approximations(52), r_e(52), r_u(52);
     
     for(Index i = 0; i <= 52; i++) {
