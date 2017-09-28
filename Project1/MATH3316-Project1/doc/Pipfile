@@ -7,5 +7,10 @@ name = "pypi"
 
 [packages]
 
+pandadocs = "*"
+jupyter = "*"
+matplotlib = "*"
+
+
 [requires]
 python_version = "3.6"
