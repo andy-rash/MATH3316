@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A11D1D9C1F7C572C00C267BE /* proj1_b.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19E64311F798B12006D0BE3 /* proj1_b.cpp */; };
+		A11D1D9E1F7C832D00C267BE /* proj1_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19E64331F798B2F006D0BE3 /* proj1_c.cpp */; };
 		A13881651F72D64E0073CEF6 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A138815E1F72D64E0073CEF6 /* Vector.cpp */; };
 		A13881661F72D64E0073CEF6 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A13881631F72D64E0073CEF6 /* Matrix.cpp */; };
 		A19CD0B01F72D576004A8578 /* nest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A19CD0AE1F72D576004A8578 /* nest.cpp */; };
@@ -192,10 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11D1D9E1F7C832D00C267BE /* proj1_c.cpp in Sources */,
 				A13881661F72D64E0073CEF6 /* Matrix.cpp in Sources */,
 				A13881651F72D64E0073CEF6 /* Vector.cpp in Sources */,
 				A19CD0B01F72D576004A8578 /* nest.cpp in Sources */,
-				A11D1D9C1F7C572C00C267BE /* proj1_b.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

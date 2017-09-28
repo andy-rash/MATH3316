@@ -12,22 +12,27 @@
 
 #include "Vector.h"
 
+// base function f(x)=ln(x)
 double f(const double& x) {
     return std::log(x);
 }
 
+// first derivative f'(x)
 double f1(const double& x) {
     return (1 / x);
 }
 
+// second derivative f''(x)
 double f2(const double& x) {
     return -(1 / std::pow(x, 2.0));
 }
 
+// forward difference estimate function
 double forward_difference_estimate(const double& a, const double& h) {
     return (f(a+h) - f(a)) / h;
 }
 
+// relative error
 double relative_error(const double& a, const double& h) {
     
     auto f1_a = f1(a);
@@ -37,6 +42,7 @@ double relative_error(const double& a, const double& h) {
     
 }
 
+// relative error, upper bound
 double relative_error_upper_bound(const double& a, const double& h) {
     
     auto f_a = f(a);
@@ -52,14 +58,21 @@ double relative_error_upper_bound(const double& a, const double& h) {
 
 int main(int argc, const char * argv[]) {
 
+    /*
+     * Calculations
+     *
+     */
+    
     // Generate increments for
     // h = 2^(-n), n = (1, 2, 3, ... , 52)
     auto n = PH::Vector::linSpace(1, 52, 52);
     PH::Vector h = 2 ^ -n;
     
+    // Make Vectors to hold calculated error values
     auto a = 3.0;
     PH::Vector approximations(52), r_e(52), r_u(52);
     
+    // Calculate the error values
     for(Index i = 0; i <= 52; i++) {
         
         r_e[i] = relative_error(a, h[i]);

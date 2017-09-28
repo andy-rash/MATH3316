@@ -13,8 +13,12 @@
 
 #include "nest.hpp"
 
-int factorial(int x) { return (x == 1 ? x : x * factorial(x - 1)); }
+// simple factorial function
+unsigned int factorial(const unsigned int& n) {
+    return n == 0 ? 1 : (n * factorial(n - 1));
+}
 
+// return a Vector containing n Taylor coefficients for f(x) = e^x
 PH::Vector exp_taylor_coef(int degree) {
     
     std::vector<double> ret;
@@ -31,6 +35,11 @@ PH::Vector exp_taylor_coef(int degree) {
 }
 
 int main(int argc, const char * argv[]) {
+    
+    /*
+     * Calculations
+     *
+     */
     
     Approximator * appr = new Approximator();
     
@@ -60,6 +69,11 @@ int main(int argc, const char * argv[]) {
     for(int i = 0; i < f_vec.size(); i++) { err4_vec.push_back(abs(f_vec[i] - p4_vec[i])); }
     for(int i = 0; i < f_vec.size(); i++) { err8_vec.push_back(abs(f_vec[i] - p8_vec[i])); }
     for(int i = 0; i < f_vec.size(); i++) { err12_vec.push_back(abs(f_vec[i] - p12_vec[i])); }
+    
+    /*
+     * Output files
+     *
+     */
     
     PH::Vector p4(p4_vec);
     PH::Vector p8(p8_vec);

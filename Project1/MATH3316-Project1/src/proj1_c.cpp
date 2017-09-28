@@ -13,15 +13,22 @@
 
 #include "Vector.h"
 
+// simple factorial function
 unsigned int factorial(const unsigned int& n) {
     return n == 0 ? 1 : (n * factorial(n - 1));
 }
 
+// calculate recurrence relation for j = {1, 2, ... , 25}
 double recurrence_relation(const int& j, const double& v_j1) {
     return 1.0 - (j * v_j1);
 }
 
 int main(int argc, const char * argv[]) {
+    
+    /*
+     * Calculations
+     *
+     */
     
     std::vector<double> e;
     double epsilons[] = { 0.13, 0.0024, 0.000035 };
@@ -48,6 +55,7 @@ int main(int argc, const char * argv[]) {
         }
     }
     
+    // perform calculations that include epsilon values
     for(int x = 0; x < 3; x++) {
         for(auto& i : j) {
             if(i == 0) {
@@ -64,22 +72,48 @@ int main(int argc, const char * argv[]) {
         }
     }
     
+    /*
+     * Output files
+     *
+     */
+    
     // output j vector
     std::ofstream _output_file;
-    _output_file.open("res/part3/calc_pt1.txt");
+    _output_file.open("res/part3/j.txt");
     for(auto& i : j) {
-        _output_file << i << "\t" << v[i] << "\t" << e[i] << std::endl;
+        _output_file << i << std::endl;
     }
     _output_file.close();
     
+    // output initial vector v
+    _output_file.open("res/part3/v.txt");
+    for(auto& i : j) {
+        _output_file << v[i] << std::endl;
+    }
+    _output_file.close();
     
+    // output initial estimate vector e
+    _output_file.open("res/part3/e.txt");
+    for(auto& i : j) {
+        _output_file << e[i] << std::endl;
+    }
+    _output_file.close();
+    
+    // output calculation and estimation vectors v2_(1..3) and e2_(1..3)
     for(int x = 0; x < 3; x++) {
         
-        std::string filename = "res/part3/calc_pt2_e" + std::to_string(x+1) + ".txt";
+        std::string filename = "res/part3/v2_e" + std::to_string(x+1) + ".txt";
         
         _output_file.open(filename.c_str());
         for(auto& i : j) {
-            _output_file << i << "\t" << v_e[x][i] << "\t" << e_e[x][i] << std::endl;
+            _output_file << v_e[x][i] << std::endl;
+        }
+        _output_file.close();
+        
+        filename = "res/part3/e2_e" + std::to_string(x+1) + ".txt";
+        _output_file.open(filename.c_str());
+        for(auto& i : j) {
+            _output_file << e_e[x][i] << std::endl;
         }
         _output_file.close();
         

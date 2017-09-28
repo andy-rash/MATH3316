@@ -8,12 +8,18 @@
 
 #include "nest.hpp"
 
+/*
+ * Constructors
+ *
+ */
+
 Approximator::Approximator() { }
 
 Approximator::Approximator(const Approximator& appr) { }
 
 Approximator::~Approximator() { }
 
+// evaluate a polynomial at a given x value using a Vector of Taylor coefficients
 double Approximator::nest(const PH::Vector& c, const double& x) {
     
     double p = (double)c[c.size()-1];
