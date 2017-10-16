@@ -65,7 +65,7 @@ int main(int argc, char* argv[]) {
         
     });
     
-    std::string path = "../res/part2/";
+    std::string path = "res/part2/";
     t.saveTo(path + "t.txt");
     x_t.saveTo(path + "x_t.txt");
     y_t.saveTo(path + "y_t.txt");
