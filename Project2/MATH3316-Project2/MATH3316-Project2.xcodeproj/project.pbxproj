@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A17D3E031F8FEA6D0057F2C3 /* test_bisect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3E001F8FEA6D0057F2C3 /* test_bisect.cpp */; };
-		A17D3E041F8FEA6D0057F2C3 /* bisection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3E021F8FEA6D0057F2C3 /* bisection.cpp */; };
+		A15CB8EC1F95066200B41058 /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3E071F8FEAA10057F2C3 /* test_newton.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -168,8 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17D3E041F8FEA6D0057F2C3 /* bisection.cpp in Sources */,
-				A17D3E031F8FEA6D0057F2C3 /* test_bisect.cpp in Sources */,
+				A15CB8EC1F95066200B41058 /* test_newton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
