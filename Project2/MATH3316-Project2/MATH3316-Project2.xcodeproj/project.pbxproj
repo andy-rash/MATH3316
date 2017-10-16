@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A15CB8EC1F95066200B41058 /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3E071F8FEAA10057F2C3 /* test_newton.cpp */; };
+		A15CB8EE1F950FF100B41058 /* kepler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15CB8ED1F950FF100B41058 /* kepler.cpp */; };
+		A15CB8EF1F952ED700B41058 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3DF71F8FE72F0057F2C3 /* Matrix.cpp */; };
+		A15CB8F01F952ED700B41058 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3DF61F8FE72F0057F2C3 /* Vector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A15CB8ED1F950FF100B41058 /* kepler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kepler.cpp; sourceTree = "<group>"; };
 		A17D3DE81F8FE69B0057F2C3 /* MATH3316-Project2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MATH3316-Project2"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17D3DF51F8FE72F0057F2C3 /* Serializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
 		A17D3DF61F8FE72F0057F2C3 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 				A17D3E011F8FEA6D0057F2C3 /* fcn.hpp */,
 				A17D3E051F8FEA930057F2C3 /* newton.cpp */,
 				A17D3E071F8FEAA10057F2C3 /* test_newton.cpp */,
+				A15CB8ED1F950FF100B41058 /* kepler.cpp */,
 				A17D3E001F8FEA6D0057F2C3 /* test_bisect.cpp */,
 			);
 			path = src;
@@ -167,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15CB8EC1F95066200B41058 /* test_newton.cpp in Sources */,
+				A15CB8EF1F952ED700B41058 /* Matrix.cpp in Sources */,
+				A15CB8F01F952ED700B41058 /* Vector.cpp in Sources */,
+				A15CB8EE1F950FF100B41058 /* kepler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
