@@ -17,16 +17,16 @@
 #include <cmath>
 #endif
 
-#include <iostream>
-#include <sstream>
-#include <fstream>
-#include <string>
-
-#include <vector>
-#include <limits>
 #include <algorithm>
+#include <fstream>
+#include <functional>
+#include <iostream>
+#include <limits>
 #include <numeric>
 #include <random>
+#include <sstream>
+#include <string>
+#include <vector>
 
 // singularity tolerance
 #define STOL 1.e-15
