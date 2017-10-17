@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A15CB8EE1F950FF100B41058 /* kepler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15CB8ED1F950FF100B41058 /* kepler.cpp */; };
-		A15CB8EF1F952ED700B41058 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3DF71F8FE72F0057F2C3 /* Matrix.cpp */; };
-		A15CB8F01F952ED700B41058 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3DF61F8FE72F0057F2C3 /* Vector.cpp */; };
+		A1ADDE7D1F96793E00891744 /* test_newton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17D3E071F8FEAA10057F2C3 /* test_newton.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -171,9 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15CB8EF1F952ED700B41058 /* Matrix.cpp in Sources */,
-				A15CB8F01F952ED700B41058 /* Vector.cpp in Sources */,
-				A15CB8EE1F950FF100B41058 /* kepler.cpp in Sources */,
+				A1ADDE7D1F96793E00891744 /* test_newton.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
