@@ -11,7 +11,7 @@
 
 #include <iostream>
 
-#include "Matrix.h"
+#include "Vector.h"
 
 class NewtonInterpolator {
     
@@ -28,11 +28,11 @@ public:
     
     ~NewtonInterpolator();
     
-    double Newton_basis(PH::Matrix& xnodes, int k, double x);
+    double Newton_basis(const PH::Vector& x_nodes, const std::size_t& k, const double& x);
     
-    PH::Matrix Newton_coefficients(PH::Matrix& xnodes, PH::Matrix& ynodes);
+    PH::Vector Newton_coefficients(const PH::Vector& x_nodes, const PH::Vector& y_nodes);
     
-    double Newton_nestedform(PH::Matrix& a, PH::Matrix& xnodes, double x);
+    double Newton_nestedform(const PH::Vector& a, const PH::Vector& x_nodes, const double& x);
     
 };
 
