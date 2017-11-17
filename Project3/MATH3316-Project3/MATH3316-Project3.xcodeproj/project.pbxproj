@@ -17,6 +17,7 @@
 		A129C9571FBCAB99001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
 		A129C9601FBCABCB001E3397 /* Runge_Cheyshev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A129C95F1FBCABCB001E3397 /* Runge_Cheyshev.cpp */; };
 		A129C9611FBE13AA001E3397 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976D1FB1F51400427205 /* application.cpp */; };
+		A129C9621FBE73E8001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
 		A16F97341FB0E4D400427205 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A16F97351FB0E4D400427205 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
 		A16F97371FB0E64500427205 /* test_Newton_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97361FB0E64500427205 /* test_Newton_test.cpp */; };
@@ -426,6 +427,7 @@
 			files = (
 				A16F975E1FB10E6400427205 /* Matrix.cpp in Sources */,
 				A16F975F1FB10E6400427205 /* Vector.cpp in Sources */,
+				A129C9621FBE73E8001E3397 /* lagrange_interpolator.cpp in Sources */,
 				A129C9611FBE13AA001E3397 /* application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
