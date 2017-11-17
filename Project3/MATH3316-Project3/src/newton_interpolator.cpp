@@ -10,7 +10,7 @@
 
 NewtonInterpolator::NewtonInterpolator() { }
 
-NewtonInterpolator::NewtonInterpolator(const NewtonInterpolator& ninterp) { }
+NewtonInterpolator::NewtonInterpolator(const NewtonInterpolator& n_interp) { }
 
 NewtonInterpolator::~NewtonInterpolator() { }
 
@@ -43,7 +43,7 @@ double NewtonInterpolator::Newton_basis(const PH::Vector& x_nodes, const std::si
 PH::Vector NewtonInterpolator::Newton_coefficients(const PH::Vector& x_nodes, const PH::Vector& y_nodes) {
     
     if(x_nodes.size() != y_nodes.size()) {
-        throw new std::invalid_argument("Vectors xnodes and ynodes are not the same size.");
+        throw new std::invalid_argument("Vectors x_nodes and y_nodes are not the same size.");
     }
     
     std::size_t k = x_nodes.size();

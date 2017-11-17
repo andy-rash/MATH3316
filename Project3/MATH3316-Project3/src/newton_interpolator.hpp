@@ -24,7 +24,7 @@ public:
     
     NewtonInterpolator();
     
-    NewtonInterpolator(const NewtonInterpolator& ninterp);
+    NewtonInterpolator(const NewtonInterpolator& n_interp);
     
     ~NewtonInterpolator();
     
