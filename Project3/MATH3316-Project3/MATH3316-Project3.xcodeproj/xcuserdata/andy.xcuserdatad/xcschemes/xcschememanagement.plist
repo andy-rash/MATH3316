@@ -9,19 +9,39 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>MATH3316-Project3_Part2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>MATH3316-Project3_Part3.xcscheme</key>
+		<key>MATH3316-Project3_Part2 copy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>MATH3316-Project3_Part2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MATH3316-Project3_Part2_Runge_uniform copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>MATH3316-Project3_Part3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A129C9461FBCA6F0001E3397</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A129C9531FBCAB99001E3397</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A16F971B1FB0E3C200427205</key>
 		<dict>
 			<key>primary</key>
