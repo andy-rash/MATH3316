@@ -23,7 +23,7 @@ double NewtonInterpolator::Newton_basis(const PH::Vector& x_nodes, const std::si
     
     double phi(1.0);
     
-    for(std::size_t i = 0; i < k; i++) {
+    for(std::size_t i = 0; i < k+1; i++) {
         phi *= x - x_nodes[i];
     }
     
@@ -61,7 +61,7 @@ PH::Vector NewtonInterpolator::Newton_coefficients(const PH::Vector& x_nodes, co
         double numer = y_nodes[i];
         numer -= Newton_nestedform(a_truncated, x_nodes, x_nodes[i]);
         
-        double denom = Newton_basis(x_nodes, i, x_nodes[i]);
+        double denom = Newton_basis(x_nodes, i-1, x_nodes[i]);
         
         a[i] = numer / denom;
     }

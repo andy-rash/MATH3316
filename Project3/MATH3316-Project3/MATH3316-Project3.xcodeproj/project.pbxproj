@@ -19,6 +19,7 @@
 		A129C9621FBE73E8001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
 		A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
 		A129C9651FC35D6A001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
+		A129C9671FC37C18001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
 		A16F97341FB0E4D400427205 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A16F97351FB0E4D400427205 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
 		A16F97371FB0E64500427205 /* test_Newton_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97361FB0E64500427205 /* test_Newton_test.cpp */; };
@@ -378,6 +379,7 @@
 				A129C9491FBCA6F0001E3397 /* Matrix.cpp in Sources */,
 				A129C94A1FBCA6F0001E3397 /* Vector.cpp in Sources */,
 				A129C94B1FBCA6F0001E3397 /* lagrange_interpolator.cpp in Sources */,
+				A129C9671FC37C18001E3397 /* newton_interpolator.cpp in Sources */,
 				A129C9481FBCA6F0001E3397 /* Runge_uniform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
