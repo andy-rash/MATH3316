@@ -44,9 +44,9 @@ int main(int argc, char* argv[]) {
         
         try {
             std::string prefix = "../res/part2/";
-            y_real.saveTo(prefix + "runge_uniform_real" + std::to_string(n) + ".txt");
-            y_comp.saveTo(prefix + "runge_uniform_comp" + std::to_string(n) + ".txt");
-            y_err.saveTo(prefix + "runge_uniform_err" + std::to_string(n) + ".txt");
+            y_real.saveTo(prefix + "runge_uniform/runge_uniform_real" + std::to_string(n) + ".txt");
+            y_comp.saveTo(prefix + "runge_uniform/runge_uniform_comp" + std::to_string(n) + ".txt");
+            y_err.saveTo(prefix + "runge_uniform/runge_uniform_err" + std::to_string(n) + ".txt");
         } catch(std::runtime_error e) {
             std::cerr << e.what() << std::endl;
             return 1;

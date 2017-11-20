@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A129C9451FBCA6E5001E3397 /* Runge_uniform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97721FB23B6000427205 /* Runge_uniform.cpp */; };
 		A129C9481FBCA6F0001E3397 /* Runge_uniform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97721FB23B6000427205 /* Runge_uniform.cpp */; };
 		A129C9491FBCA6F0001E3397 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A129C94A1FBCA6F0001E3397 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
@@ -18,6 +17,8 @@
 		A129C9601FBCABCB001E3397 /* Runge_Cheyshev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A129C95F1FBCABCB001E3397 /* Runge_Cheyshev.cpp */; };
 		A129C9611FBE13AA001E3397 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976D1FB1F51400427205 /* application.cpp */; };
 		A129C9621FBE73E8001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
+		A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
+		A129C9651FC35D6A001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
 		A16F97341FB0E4D400427205 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A16F97351FB0E4D400427205 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
 		A16F97371FB0E64500427205 /* test_Newton_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97361FB0E64500427205 /* test_Newton_test.cpp */; };
@@ -26,9 +27,6 @@
 		A16F975E1FB10E6400427205 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A16F975F1FB10E6400427205 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
 		A16F976C1FB1F1F400427205 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
-		A16F976E1FB1F51400427205 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976D1FB1F51400427205 /* application.cpp */; };
-		A16F97701FB2333800427205 /* interpolation_degree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976F1FB2333800427205 /* interpolation_degree.cpp */; };
-		A16F97731FB23B6000427205 /* Runge_uniform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97721FB23B6000427205 /* Runge_uniform.cpp */; };
 		A16F97761FB2402F00427205 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
 		A16F97771FB2420800427205 /* interpolation_degree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976F1FB2333800427205 /* interpolation_degree.cpp */; };
 /* End PBXBuildFile section */
@@ -388,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A129C9651FC35D6A001E3397 /* newton_interpolator.cpp in Sources */,
 				A129C9551FBCAB99001E3397 /* Matrix.cpp in Sources */,
 				A129C9561FBCAB99001E3397 /* Vector.cpp in Sources */,
 				A129C9571FBCAB99001E3397 /* lagrange_interpolator.cpp in Sources */,
@@ -399,13 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A16F976E1FB1F51400427205 /* application.cpp in Sources */,
 				A16F97341FB0E4D400427205 /* Matrix.cpp in Sources */,
 				A16F97351FB0E4D400427205 /* Vector.cpp in Sources */,
 				A16F976C1FB1F1F400427205 /* newton_interpolator.cpp in Sources */,
-				A16F97701FB2333800427205 /* interpolation_degree.cpp in Sources */,
 				A16F97371FB0E64500427205 /* test_Newton_test.cpp in Sources */,
-				A16F97731FB23B6000427205 /* Runge_uniform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A129C9451FBCA6E5001E3397 /* Runge_uniform.cpp in Sources */,
+				A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */,
 				A16F97501FB10E6200427205 /* Matrix.cpp in Sources */,
 				A16F97511FB10E6200427205 /* Vector.cpp in Sources */,
 				A16F97761FB2402F00427205 /* lagrange_interpolator.cpp in Sources */,

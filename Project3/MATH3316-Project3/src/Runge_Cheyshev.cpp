@@ -12,6 +12,7 @@
 #include <vector>
 
 #include "lagrange_interpolator.hpp"
+#include "newton_interpolator.hpp"
 #include "Vector.h"
 
 int main(int argc, char* argv[]) {
@@ -25,6 +26,7 @@ int main(int argc, char* argv[]) {
     };
     
     LagrangeInterpolator l_interp;
+    NewtonInterpolator n_interp;
     std::vector<std::size_t> n_vals({10, 20});
 
     for(auto& n : n_vals) {
@@ -47,17 +49,20 @@ int main(int argc, char* argv[]) {
         // evaluate p_4(x) using Lagrange interpolation, along with the error
         PH::Vector y_comp(401);
         PH::Vector y_err(401);
+        PH::Vector omega(401);
         for(std::size_t i = 0; i < z.size(); i++) {
             y_comp[i] = l_interp.lagrange(x, y_real, z[i]);
             y_err[i] = std::abs(f(z[i]) - y_comp[i]);
+            omega[i] = std::abs(n_interp.Newton_basis(x, n, z[i]));
         }
 
         try {
             std::string prefix = "../res/part2/";
-            x.saveTo(prefix + "runge_Chebyshev_nodes" + std::to_string(n) + ".txt");
-            y_real.saveTo(prefix + "runge_Chebyshev_real" + std::to_string(n) + ".txt");
-            y_comp.saveTo(prefix + "runge_Chebyshev_comp" + std::to_string(n) + ".txt");
-            y_err.saveTo(prefix + "runge_Chebyshev_err" + std::to_string(n) + ".txt");
+            x.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_nodes" + std::to_string(n) + ".txt");
+            y_real.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_real" + std::to_string(n) + ".txt");
+            y_comp.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_comp" + std::to_string(n) + ".txt");
+            y_err.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_err" + std::to_string(n) + ".txt");
+            omega.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_omega"+ std::to_string(n) + ".txt");
         } catch(std::runtime_error e) {
             std::cerr << e.what() << std::endl;
             return 1;
