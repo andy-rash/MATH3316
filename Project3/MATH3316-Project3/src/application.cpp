@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
     }
     
     try {
-        std::string prefix = "../res/part3/";
+        std::string prefix = "res/part3/";
         years.saveTo(prefix + "years.txt");
         temps.saveTo(prefix + "temps.txt");
         comp.saveTo(prefix + "comp.txt");

@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
     }
     
     try {
-        std::string prefix = "../res/part1/";
+        std::string prefix = "res/part1/";
         y_real.saveTo(prefix + "y_real.txt");
         y_comp.saveTo(prefix + "y_comp.txt");
         y_err.saveTo(prefix + "y_err.txt");
