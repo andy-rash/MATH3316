@@ -49,13 +49,18 @@ int main(int argc, char* argv[]) {
         // evaluate p_4(x) using Lagrange interpolation, along with the error
         PH::Vector y_comp(401);
         PH::Vector y_err(401);
-        PH::Vector omega(401);
         for(std::size_t i = 0; i < z.size(); i++) {
             y_comp[i] = l_interp.lagrange(x, y_real, z[i]);
             y_err[i] = std::abs(f(z[i]) - y_comp[i]);
-            omega[i] = std::abs(n_interp.Newton_basis(x, n, z[i]));
         }
 
+        PH::Vector omega(401);
+        if(n == 10) {
+            for(std::size_t i = 0; i < z.size(); i++) {
+                omega[i] = std::abs(n_interp.Newton_basis(x, n, z[i]));
+            }
+        }
+        
         try {
             std::string prefix = "res/part2/";
             x.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_nodes" + std::to_string(n) + ".txt");

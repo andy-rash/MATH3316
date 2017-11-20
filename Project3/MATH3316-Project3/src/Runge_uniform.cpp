@@ -11,6 +11,7 @@
 #include <vector>
 
 #include "lagrange_interpolator.hpp"
+#include "newton_interpolator.hpp"
 #include "Vector.h"
 
 int main(int argc, char* argv[]) {
@@ -20,6 +21,7 @@ int main(int argc, char* argv[]) {
     };
     
     LagrangeInterpolator l_interp;
+    NewtonInterpolator n_interp;
     std::vector<std::size_t> n_vals({10, 20});
     
     for(auto& n : n_vals) {
@@ -42,11 +44,19 @@ int main(int argc, char* argv[]) {
             y_err[i] = std::abs(f(z[i]) - y_comp[i]);
         }
         
+        PH::Vector omega(401);
+        if(n == 10) {
+            for(std::size_t i = 0; i < z.size(); i++) {
+                omega[i] = std::abs(n_interp.Newton_basis(x, n, z[i]));
+            }
+        }
+        
         try {
             std::string prefix = "res/part2/";
             y_real.saveTo(prefix + "runge_uniform/runge_uniform_real" + std::to_string(n) + ".txt");
             y_comp.saveTo(prefix + "runge_uniform/runge_uniform_comp" + std::to_string(n) + ".txt");
             y_err.saveTo(prefix + "runge_uniform/runge_uniform_err" + std::to_string(n) + ".txt");
+            omega.saveTo(prefix + "runge_uniform/runge_uniform_omega" + std::to_string(n) + ".txt");
         } catch(std::runtime_error e) {
             std::cerr << e.what() << std::endl;
             return 1;
