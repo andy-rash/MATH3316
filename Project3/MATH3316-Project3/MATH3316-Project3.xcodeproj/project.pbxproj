@@ -14,7 +14,7 @@
 		A129C9551FBCAB99001E3397 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F972F1FB0E4D400427205 /* Matrix.cpp */; };
 		A129C9561FBCAB99001E3397 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97301FB0E4D400427205 /* Vector.cpp */; };
 		A129C9571FBCAB99001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
-		A129C9601FBCABCB001E3397 /* Runge_Cheyshev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A129C95F1FBCABCB001E3397 /* Runge_Cheyshev.cpp */; };
+		A129C9601FBCABCB001E3397 /* Runge_Chebyshev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A129C95F1FBCABCB001E3397 /* Runge_Chebyshev.cpp */; };
 		A129C9611FBE13AA001E3397 /* application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976D1FB1F51400427205 /* application.cpp */; };
 		A129C9621FBE73E8001E3397 /* lagrange_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F97741FB2402F00427205 /* lagrange_interpolator.cpp */; };
 		A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */; };
@@ -82,7 +82,7 @@
 /* Begin PBXFileReference section */
 		A129C9521FBCA6F0001E3397 /* MATH3316-Project3_Part2_Runge_uniform */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MATH3316-Project3_Part2_Runge_uniform"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A129C95E1FBCAB99001E3397 /* MATH3316-Project3_Part2_Runge_Chebyshev */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MATH3316-Project3_Part2_Runge_Chebyshev"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A129C95F1FBCABCB001E3397 /* Runge_Cheyshev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Runge_Cheyshev.cpp; path = src/Runge_Cheyshev.cpp; sourceTree = SOURCE_ROOT; };
+		A129C95F1FBCABCB001E3397 /* Runge_Chebyshev.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Runge_Chebyshev.cpp; path = src/Runge_Chebyshev.cpp; sourceTree = SOURCE_ROOT; };
 		A16F971C1FB0E3C200427205 /* MATH3316-Project3_Part1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MATH3316-Project3_Part1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16F972B1FB0E4D400427205 /* NotImplementedException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotImplementedException.h; sourceTree = "<group>"; };
 		A16F972D1FB0E4D400427205 /* Serializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				A16F976A1FB1F1F400427205 /* newton_interpolator.cpp */,
 				A16F976B1FB1F1F400427205 /* newton_interpolator.hpp */,
 				A16F97721FB23B6000427205 /* Runge_uniform.cpp */,
-				A129C95F1FBCABCB001E3397 /* Runge_Cheyshev.cpp */,
+				A129C95F1FBCABCB001E3397 /* Runge_Chebyshev.cpp */,
 				A16F97361FB0E64500427205 /* test_Newton_test.cpp */,
 			);
 			name = src;
@@ -390,7 +390,7 @@
 				A129C9551FBCAB99001E3397 /* Matrix.cpp in Sources */,
 				A129C9561FBCAB99001E3397 /* Vector.cpp in Sources */,
 				A129C9571FBCAB99001E3397 /* lagrange_interpolator.cpp in Sources */,
-				A129C9601FBCABCB001E3397 /* Runge_Cheyshev.cpp in Sources */,
+				A129C9601FBCABCB001E3397 /* Runge_Chebyshev.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */,
 				A16F97501FB10E6200427205 /* Matrix.cpp in Sources */,
 				A16F97511FB10E6200427205 /* Vector.cpp in Sources */,
 				A16F97761FB2402F00427205 /* lagrange_interpolator.cpp in Sources */,
+				A129C9641FC26338001E3397 /* newton_interpolator.cpp in Sources */,
 				A16F97771FB2420800427205 /* interpolation_degree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

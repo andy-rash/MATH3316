@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
         }
 
         try {
-            std::string prefix = "../res/part2/";
+            std::string prefix = "res/part2/";
             x.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_nodes" + std::to_string(n) + ".txt");
             y_real.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_real" + std::to_string(n) + ".txt");
             y_comp.saveTo(prefix + "runge_chebyshev/runge_Chebyshev_comp" + std::to_string(n) + ".txt");
