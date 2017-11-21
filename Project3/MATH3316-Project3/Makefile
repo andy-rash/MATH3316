@@ -25,7 +25,7 @@ TARGETC = Project3_Part3
 
 PT1_FILES = newton_interpolator.cpp test_Newton_test.cpp 
 PT2_1_FILES = lagrange_interpolator.cpp newton_interpolator.cpp interpolation_degree.cpp
-PT2_2_FILES = lagrange_interpolator.cpp Runge_uniform.cpp
+PT2_2_FILES = lagrange_interpolator.cpp newton_interpolator.cpp Runge_uniform.cpp
 PT2_3_FILES = lagrange_interpolator.cpp newton_interpolator.cpp Runge_Chebyshev.cpp
 PT3_FILES = lagrange_interpolator.cpp application.cpp
 
