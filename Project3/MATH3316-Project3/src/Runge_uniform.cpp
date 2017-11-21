@@ -16,6 +16,7 @@
 
 int main(int argc, char* argv[]) {
     
+    // input function
     auto f = [](const double x) -> double {
         return (1 / (1 + std::pow(x, 2)));
     };
@@ -33,10 +34,10 @@ int main(int argc, char* argv[]) {
             y_real[i] = f(x[i]);
         }
         
-        // set evaluation points z as midpoints between nodes
+        // set evaluation points z as 401 equally spaced nodes in [-5,5]
         PH::Vector z = PH::Vector::linSpace(-5, 5, 401);
         
-        // evaluate p_4(x) using Lagrange interpolation, along with the error
+        // evaluate p_n(x) using Lagrange interpolation, along with the error
         PH::Vector y_comp(401);
         PH::Vector y_err(401);
         for(std::size_t i = 0; i < z.size(); i++) {
@@ -44,6 +45,7 @@ int main(int argc, char* argv[]) {
             y_err[i] = std::abs(f(z[i]) - y_comp[i]);
         }
         
+        // calculate phi_{n+1}(x)
         PH::Vector omega(401);
         if(n == 10) {
             for(std::size_t i = 0; i < z.size(); i++) {

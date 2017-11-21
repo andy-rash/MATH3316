@@ -2,7 +2,7 @@
 //  test_Newton_test.cpp
 //  MATH3316-Project3
 //
-//  Created by andy on 11/6/17.
+//  Created by andy on 11/7/17.
 //  Copyright © 2017 andy. All rights reserved.
 //
 
@@ -27,15 +27,16 @@ int main(int argc, char* argv[]) {
     PH::Vector y_nodes(x_nodes);
     y_nodes.mapElements([&](double& e, std::size_t i){ e = f(e); });
     
-    // Build the fourth-degree polynomial p_4(x)
+    // build the fourth-degree polynomial p_4(x)
     PH::Vector p4 = n_interp.Newton_coefficients(x_nodes, y_nodes);
     
-    // Evaluate both f(x) and p_4(x) on 201 values over the interval [-3,3]
+    // evaluate both f(x) and p_4(x) on 201 values in [-3,3]
     PH::Vector x_values = PH::Vector::linSpace(-3, 3, 201);
     PH::Vector y_real = PH::Vector(x_values.size());
     PH::Vector y_comp = PH::Vector(x_values.size());
     PH::Vector y_err = PH::Vector(x_values.size());
     
+    // compute values for f(x), p_4(x), and the error using the linear space [-3,3]
     for(std::size_t i = 0; i < x_values.size(); i++) {
         y_real[i] = f(x_values[i]);
         y_comp[i] = n_interp.Newton_nestedform(p4, x_nodes, x_values[i]);
