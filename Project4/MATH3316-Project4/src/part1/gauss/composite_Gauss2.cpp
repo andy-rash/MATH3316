@@ -8,9 +8,9 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
-#include "fcn.hpp"
 
 using namespace std;
+using Fcn = std::function<double(double)>;
 
 // This routine numerically approximates the integral
 //    int_a^b fun(x) dx

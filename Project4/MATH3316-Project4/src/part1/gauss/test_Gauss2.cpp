@@ -4,14 +4,12 @@
    31 October 2015 */
 
 // Inclusions
-#include <stdlib.h>
-#include <stdio.h>
+#include <cmath>
 #include <iostream>
 #include <vector>
-#include <math.h>
-#include "fcn.hpp"
 
 using namespace std;
+using Fcn = std::function<double(double)>;
 
 // function prototypes
 double composite_Gauss2(Fcn& f, const double a, 
@@ -33,17 +31,23 @@ public:
 // This routine tests the Gauss-2 method on a simple integral
 int main(int argc, char* argv[]) {
 
+    double c = 0.5;
+    double d = 25.0;
+    
+    Fcn f = [&](double x) -> double {
+        return (exp(c * x) + sin(d * x));
+    };
+    
+    Fcn antiderivative = [&](double x) -> double {
+        return ((exp(c * x) / c) - (cos(d * x) / d));
+    };
+    
   // limits of integration
   double a = -3.0;
   double b = 5.0;
 
-  // integrand
-  fcn f;
-  f.c = 0.5;
-  f.d = 25.0;
-
   // true integral value
-  double Itrue = f.antiderivative(b) - f.antiderivative(a);
+  double Itrue = antiderivative(b) - antiderivative(a);
   printf("\n True Integral = %22.16e\n", Itrue);
 
 
