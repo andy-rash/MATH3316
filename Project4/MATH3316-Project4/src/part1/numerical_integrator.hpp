@@ -10,6 +10,8 @@
 #define NUMERICAL_INTEGRATOR_HPP
 
 #include <functional>
+#include <iostream>
+#include <vector>
 
 using Fcn = std::function<double(double)>;
 
