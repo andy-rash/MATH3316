@@ -47,28 +47,20 @@ double NumericalIntegrator::composite_simpson(const Fcn& f, const double& a, con
     }
     
     double h = (b - a) / n;
-    double approx((h / 3) * (f(a) + f(b)));
-    double m = n / 2;
-    double sum_a(0.0), sum_b(0.0);
-    double x_k(1.0);
-    double x_k1(1.0);
+    double approx(f(a) + f(b));
     
-    // perform first summation
-    for(std::size_t k = 1; k < m - 1; k++) {
-        x_k = a + (2 * k) * h;
-        sum_a += f(x_k);
+    // perform summation 1
+    for(std::size_t k = 1; k < n; k += 2) {
+        approx += 4 * f(a + k * h);
     }
     
-    // perform second summation
-    for(std::size_t k = 1; k < m; k++) {
-        x_k1 = a + (2 * k - 1) * h;
-        sum_b += f(x_k1);
+    // perform summation 2
+    for(std::size_t k = 2; k < n-1; k += 2) {
+        approx += 2 * f(a + k * h);
     }
     
     // put it all together
-    approx += ((2 * h) / 3) * sum_a + ((4 * h) / 3) * sum_b;
-    
-    return approx;
+    return approx * h / 3.0;
     
 }
 
@@ -95,19 +87,14 @@ double NumericalIntegrator::composite_trapezoidal(const Fcn& f, const double& a,
     }
     
     double h = (b - a) / n;
-    double approx((h / 2) * (f(a) + f(b)));
-    double sum(0.0);
-    double x_k(1.0);
+    double approx((f(a) + f(b)));
     
     // perform summation
     for(std::size_t k = 1; k < n-1; k++) {
-        x_k = a + k * h;
-        sum += f(x_k);
+        approx += 2 * f(a + k * h);
     }
     
     // put it all together
-    approx += h * sum;
-    
-    return approx;
+    return approx * h / 2.0;
     
 }
