@@ -25,7 +25,7 @@ TARGETB = Project4_Part2
 
 PT1_1_FILES = numerical_integrator.cpp test_basic_rules.cpp 
 PT1_2_FILES = composite_Gauss2.cpp test_Gauss2.cpp
-PT2_FILES = carbon.cpp test_carbon.cpp
+PT2_FILES = test_carbon.cpp
 
 LIBFILES = Matrix.cpp Vector.cpp
 
@@ -87,5 +87,6 @@ clean:
 	rm -f ./$(addprefix $(BIN), $(TARGETA_2))
 	rm -f ./$(addprefix $(BIN), $(TARGETB))
 	rm -f ./$(DOC)*.nbconvert.ipynb
-	rm -f ./$(RES)/*
+	rm -f ./$(RES)/part1/*
+	rm -f ./$(RES)/part2/*
 
