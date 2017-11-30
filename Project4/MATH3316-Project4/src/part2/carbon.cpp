@@ -7,12 +7,15 @@
 //
 
 #include <cmath>
-#include <iostream>
 
 #include "../part1/gauss/composite_Gauss2.cpp"
 
-using Fcn = std::function<double(double)>;
-
+// Error function
+//
+// erf(y) = (2 / pi) * \integral_{0}^{y} e^(-z^2) dz
+//
+// * the 'n' parameter is used in composite_Gauss2()
+//
 double erf(const double& y, const int& n) {
     
     Fcn f = [&](double z) -> double {
@@ -23,6 +26,18 @@ double erf(const double& y, const int& n) {
 
 }
 
+// Carbon concentration
+//
+// calculated using C(x,t) where
+//
+//     C(x,t) = C_s - (C_s - C_0) * erf(x / sqrt(4 * D * t))
+//
+//     C_s = carbon concentration in gas
+//     C_0 = initial carbon concentration
+//     x   = value at which to evaluate the function
+//     D   = diffusion coefficient
+//     t   = time
+//
 double carbon(const double& x, const double& t) {
     
     double c_0(0.002);

@@ -12,9 +12,9 @@
 		A14C322D1FCDD6B50086BB7F /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C322A1FCDD6B50086BB7F /* Vector.cpp */; };
 		A14C323F1FCDD8780086BB7F /* composite_Gauss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C32311FCDD7FA0086BB7F /* composite_Gauss2.cpp */; };
 		A14C32401FCDD8780086BB7F /* test_Gauss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C32301FCDD7FA0086BB7F /* test_Gauss2.cpp */; };
-		A14C324E1FCDD9AF0086BB7F /* carbon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C324D1FCDD9AF0086BB7F /* carbon.cpp */; };
 		A14C32511FCDD9FA0086BB7F /* test_carbon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C32501FCDD9FA0086BB7F /* test_carbon.cpp */; };
 		A14C32541FCDDA650086BB7F /* numerical_integrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C32521FCDDA650086BB7F /* numerical_integrator.cpp */; };
+		A14C32551FCF70880086BB7F /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14C322A1FCDD6B50086BB7F /* Vector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,6 +127,8 @@
 		A14C32181FCDD65A0086BB7F /* res */ = {
 			isa = PBXGroup;
 			children = (
+				A14C32561FCF711E0086BB7F /* part1 */,
+				A14C32571FCF71230086BB7F /* part2 */,
 			);
 			path = res;
 			sourceTree = "<group>";
@@ -187,6 +189,20 @@
 				A14C32301FCDD7FA0086BB7F /* test_Gauss2.cpp */,
 			);
 			path = gauss;
+			sourceTree = "<group>";
+		};
+		A14C32561FCF711E0086BB7F /* part1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = part1;
+			sourceTree = "<group>";
+		};
+		A14C32571FCF71230086BB7F /* part2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = part2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14C324E1FCDD9AF0086BB7F /* carbon.cpp in Sources */,
+				A14C32551FCF70880086BB7F /* Vector.cpp in Sources */,
 				A14C32511FCDD9FA0086BB7F /* test_carbon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
