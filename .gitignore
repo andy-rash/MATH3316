@@ -36,6 +36,7 @@ Package.resolved
 # temp files
 *.swp
 .DS_Store
+.ipynb_checkpoints/
 
 # virtualenvs / config
 *.txt
