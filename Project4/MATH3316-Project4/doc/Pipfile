@@ -5,9 +5,18 @@ verify_ssl = true
 name = "pypi"
 
 
-[packages]
-
-
-
 [dev-packages]
 
+
+
+[packages]
+
+pandadocs = "*"
+jupyter = "*"
+matplotlib = "*"
+numpy = "*"
+
+
+[requires]
+
+python_version = "3.6"
