@@ -43,7 +43,8 @@ double carbon(const double& x, const double& t) {
     double c_0(0.002);
     double c_s(0.07);
     double d(1.75e-11);
+    int n(1000);
     
-    return c_s - (c_s - c_0) * erf((x / std::sqrt(4 * d * t)), 1000);
+    return c_s - (c_s - c_0) * erf((x / std::sqrt(4 * d * t)), n);
     
 }
