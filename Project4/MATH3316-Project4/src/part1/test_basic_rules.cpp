@@ -43,12 +43,12 @@ int main(int argc, const char* argv[]) {
     printf("True Integral (polynomial) = %22.16e\n\n", I_true);
     
     std::cout << "Simpson's Rule Polynomial test (f(x) = 6x^2 - 4x + 1):" << std::endl;
-    std::cout << "     n             R(f)               abs err" << std::endl;
+    std::cout << "     n             I_f                abs err" << std::endl;
     std::cout << "-------------------------------------------------------" << std::endl;
     printf("  %6i    %22.16e    %7.1e         \n\n", n, I_approx_simp, I_approx_simp_err);
     
     std::cout << "Trapezoid Rule Polynomial test (f(x) = 6x^2 - 4x + 1):" << std::endl;
-    std::cout << "     n             R(f)               abs err" << std::endl;
+    std::cout << "     n             I_f                abs err" << std::endl;
     std::cout << "-------------------------------------------------------" << std::endl;
     printf("  %6i    %22.16e    %7.1e         \n\n\n", n, I_approx_trapezoid, I_approx_trapezoid_err);
     
@@ -57,7 +57,7 @@ int main(int argc, const char* argv[]) {
     printf("True Integral (trig function) = %22.16e\n", trig_antiderivative);
     
     std::cout << "\n Simpson Rule approximation:\n";
-    std::cout << "     n             R(f)            abs err    conv rate\n";
+    std::cout << "     n             I_f             abs err    conv rate\n";
     std::cout << "  -----------------------------------------------------\n";
     
     std::vector<int> n_vals({20, 40, 80, 160, 320, 640});
@@ -83,7 +83,7 @@ int main(int argc, const char* argv[]) {
     }
     
     std::cout << "\n Trapezoid Rule approximation:\n";
-    std::cout << "     n             R(f)            abs err    conv rate\n";
+    std::cout << "     n             I_f             abs err    conv rate\n";
     std::cout << "  -----------------------------------------------------\n";
     
     errors.clear();
