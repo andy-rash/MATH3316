@@ -14,7 +14,7 @@
 
 int main(int argc, const char* argv []) {
     
-    PH::Vector interval = PH::Vector::linSpace(0.0, 3.0, 200);
+    PH::Vector interval = PH::Vector::linSpace(0.0, 0.003, 200);
     std::vector<int> t_vals({1, 2, 10, 40});
     
     for(auto& t : t_vals) {
@@ -22,7 +22,7 @@ int main(int argc, const char* argv []) {
         PH::Vector data(interval.size());
         
         for(std::size_t i = 0; i < interval.size(); i++) {
-            data[i] = carbon(interval[i], t);
+            data[i] = carbon(interval[i], t*3600);
         }
         
         try {
