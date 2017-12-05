@@ -34,6 +34,7 @@ double erf(const double& y, const int& n) {
 //
 //     C_s = carbon concentration in gas
 //     C_0 = initial carbon concentration
+//     n   = number of iterations to pass to composite_Gauss2
 //     x   = value at which to evaluate the function
 //     D   = diffusion coefficient
 //     t   = time
