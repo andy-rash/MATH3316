@@ -52,6 +52,7 @@ int main(int argc, const char* argv[]) {
     std::cout << "-------------------------------------------------------" << std::endl;
     printf("  %6i    %22.16e    %7.1e         \n\n\n", n, I_approx_trapezoid, I_approx_trapezoid_err);
     
+    std::cout << "=======================================================" << std::endl << std::endl << std::endl;
     
     printf("True Integral (trig function) = %22.16e\n", trig_antiderivative);
     
@@ -90,7 +91,7 @@ int main(int argc, const char* argv[]) {
     for(std::size_t i = 0; i < n_vals.size(); i++) {
         
         double trig_integ_trapezoid = n_integ.composite_trapezoidal(trig, a, b, n_vals[i]);
-        errors.push_back(std::abs(I_true - trig_integ_trapezoid));
+        errors.push_back(std::abs(trig_antiderivative - trig_integ_trapezoid));
         h_vals.push_back((double)((b - a) / n_vals[i]));
         
         printf("   %6i", n_vals[i]);
