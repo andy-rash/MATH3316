@@ -41,6 +41,7 @@ Package.resolved
 # virtualenvs / config
 *.txt
 !requirements.txt
+!carbon_*.txt
 venv/
 
 # backups
