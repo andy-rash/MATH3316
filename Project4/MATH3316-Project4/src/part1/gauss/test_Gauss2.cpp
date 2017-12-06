@@ -5,6 +5,7 @@
 
 // Inclusions
 #include <cmath>
+#include <functional>
 #include <iostream>
 #include <vector>
 

@@ -6,6 +6,7 @@
 // Inclusions
 #include <stdlib.h>
 #include <stdio.h>
+#include <functional>
 #include <iostream>
 #include <math.h>
 
